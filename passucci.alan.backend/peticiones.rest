@@ -43,6 +43,6 @@ POST http://localhost:5000/api/credenciales/registro
 Content-Type: application/json
 
 {
-    "username": "admin",
-    "password": "admin"
+    "username": "test2",
+    "password": "123"
 }

@@ -28,6 +28,9 @@ const handlerError = (error, req, res, next) => {
     else if(error.name === "TokenExpiredError"){
         res.status(401).send({error: error.name, message: error.message});
     }
+    else if(error.name === "MongoServerError"){
+        res.status(409).send({error: error.name, message: "Ya existe ese usuario"});
+    }
     else{
         res.status(500).send({ok: false, error: "Error interno del servidor"});
     }
