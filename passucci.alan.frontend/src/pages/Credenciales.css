@@ -1,0 +1,14 @@
+.divBody{
+    min-height: 100vh;
+    background: linear-gradient(yellow, white);
+}
+
+.centrado{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
